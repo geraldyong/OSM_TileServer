@@ -1,0 +1,9 @@
+.env
+.env.*
+mapfiles/
+*.pem
+*.key
+*.crt
+*.p12
+*.pfx
+.DS_Store
