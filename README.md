@@ -1,9 +1,11 @@
-# openstreetmap-tile-server
+# OSM TileServer
 
 [![Build Status](https://travis-ci.org/Overv/openstreetmap-tile-server.svg?branch=master)](https://travis-ci.org/Overv/openstreetmap-tile-server) [![](https://images.microbadger.com/badges/image/overv/openstreetmap-tile-server.svg)](https://microbadger.com/images/overv/openstreetmap-tile-server "openstreetmap-tile-server")
 [![Docker Image Version (latest semver)](https://img.shields.io/docker/v/overv/openstreetmap-tile-server?label=docker%20image)](https://hub.docker.com/r/overv/openstreetmap-tile-server/tags)
 
-This container allows you to easily set up an OpenStreetMap PNG tile server given a `.osm.pbf` file. It is based on the [latest Ubuntu 18.04 LTS guide](https://switch2osm.org/serving-tiles/manually-building-a-tile-server-18-04-lts/) from [switch2osm.org](https://switch2osm.org/) and therefore uses the default OpenStreetMap style.
+This repository packages a Singapore-focused OpenStreetMap tile server workflow using the default OpenStreetMap Carto style.
+
+It is based on [`overv/openstreetmap-tile-server`](https://github.com/Overv/openstreetmap-tile-server), with local onboarding, Singapore defaults, and import/runtime fixes for this environment.
 
 ## Singapore quickstart
 
@@ -28,8 +30,8 @@ After startup, open [http://localhost:8080](http://localhost:8080). The demo map
 Typical first-run flow for a new developer:
 
 ```
-git clone <repo-url>
-cd osm-tile-server
+git clone https://github.com/geraldyong/OSM_TileServer.git
+cd OSM_TileServer
 ./setup-singapore.sh
 docker compose up -d
 ```
